@@ -22,16 +22,16 @@ BEGIN
     /*COMPLETE THE ARRAY LIST WITH PERSON DATA*/
 
     lpatient := L_PATIENT(
-        M_PATIENT('María', 'López', '1990-03-25', 'Avenida Principal', '987654321', 'maria@example.com', 'Detalles del paciente 2', 'Femenino'),
-        M_PATIENT('Ana', 'Martínez', '1995-09-20', 'Calle 456', '111222333', 'ana@example.com', 'Detalles del paciente 3', 'Femenino'),
-        M_PATIENT('Pedro', 'Gómez', '1980-04-12', 'Avenida Central', '444555666', 'pedro@example.com', 'Detalles del paciente 4', 'Masculino'),
-        M_PATIENT('Luisa', 'Rodríguez', '2000-12-05', 'Plaza Principal', '777888999', 'luisa@example.com', 'Detalles del paciente 5', 'Femenino'),
-        M_PATIENT('Javier', 'Hernández', '1975-11-08', 'Carretera 123', '123456789', 'javier@example.com', 'Detalles del paciente 6', 'Masculino'),
-        M_PATIENT('Sofía', 'García', '1993-08-15', 'Avenida 123', '555666777', 'sofia@example.com', 'Detalles del paciente 7', 'Femenino'),
-        M_PATIENT('Daniel', 'Pérez', '1988-06-30', 'Calle 789', '999888777', 'daniel@example.com', 'Detalles del paciente 8', 'Masculino'),
-        M_PATIENT('Laura', 'Díaz', '1977-05-20', 'Calle 456', '333444555', 'laura@example.com', 'Detalles del paciente 9', 'Femenino'),
-        M_PATIENT('Carlos', 'Gutiérrez', '1999-02-10', 'Avenida 789', '222333444', 'carlos@example.com', 'Detalles del paciente 10', 'Masculino'),
-        M_PATIENT('Martina', 'Ruiz', '1985-11-18', 'Calle 567', '666777888', 'martina@example.com', 'Detalles del paciente 11', 'Femenino')
+        M_PATIENT('María', 'López','12345678', '1990-03-25','Femenino', 'Avenida Principal', '987654321', 'maria@example.com', 'Detalles del paciente 2'),
+        M_PATIENT('Ana', 'Martínez','98765432', '1995-09-20','Femenino', 'Calle 456', '111222333', 'ana@example.com', 'Detalles del paciente 3'),
+        M_PATIENT('Pedro', 'Gómez','56789012', '1980-04-12', 'Masculino', 'Avenida Central', '444555666', 'pedro@example.com', 'Detalles del paciente 4'),
+        M_PATIENT('Luisa', 'Rodríguez','34567890', '2000-12-05', 'Femenino', 'Plaza Principal', '777888999', 'luisa@example.com', 'Detalles del paciente 5'),
+        M_PATIENT('Javier', 'Hernández','90123456', '1975-11-08', 'Masculino', 'Carretera 123', '123456789', 'javier@example.com', 'Detalles del paciente 6'),
+        M_PATIENT('Sofía', 'García','65432109', '1993-08-15', 'Femenino', 'Avenida 123', '555666777', 'sofia@example.com', 'Detalles del paciente 7'),
+        M_PATIENT('Daniel', 'Pérez','21098765', '1988-06-30', 'Masculino', 'Calle 789', '999888777', 'daniel@example.com', 'Detalles del paciente 8'),
+        M_PATIENT('Laura', 'Díaz','43210987','1977-05-20', 'Femenino', 'Calle 456', '333444555', 'laura@example.com', 'Detalles del paciente 9'),
+        M_PATIENT('Carlos', 'Gutiérrez','78901234', '1999-02-10', 'Masculino', 'Avenida 789', '222333444', 'carlos@example.com', 'Detalles del paciente 10'),
+        M_PATIENT('Martina', 'Ruiz','87654321','1985-11-18', 'Femenino', 'Calle 567', '666777888', 'martina@example.com', 'Detalles del paciente 11')
     );
 
     /*INSERT INTO LastId VARIABLE WITH THE LAST ID, USING SENTENCES OF SELECTION*/
@@ -44,6 +44,7 @@ BEGIN
                     ID,
                     NAME,
                     LASTNAME,
+                    DNI,
                     BIRTHDATE,
                     ADDRESS,
                     TELEPHONE,
