@@ -50,7 +50,7 @@ BEGIN
                     ADDRESS,
                     TELEPHONE,
                     EMAIL,
-                    OTHER_DETAILS,
+                    OTHER_DETAILS
                     )
             VALUES
                 (LastId+I,
