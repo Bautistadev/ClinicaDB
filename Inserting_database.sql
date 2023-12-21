@@ -12,7 +12,7 @@ DECLARE
  LastId INTEGER;
  
  /*CREATE A SIMULATION TABLE, USING  ARRAYS OF ORDER 5 */
- TYPE M_PATIENT IS VARRAY(8) OF VARCHAR2(30);
+ TYPE M_PATIENT IS VARRAY(9) OF VARCHAR2(30);
  TYPE L_PATIENT IS VARRAY(10) OF M_PATIENT;
  lPatient L_PATIENT;
  
@@ -46,11 +46,12 @@ BEGIN
                     LASTNAME,
                     DNI,
                     BIRTHDATE,
+                    GENDER,
                     ADDRESS,
                     TELEPHONE,
                     EMAIL,
                     OTHER_DETAILS,
-                    GENDER)
+                    )
             VALUES
                 (LastId+I,
                 lPatient(I)(1),
@@ -60,7 +61,8 @@ BEGIN
                 lPatient(I)(5), 
                 lPatient(I)(6),
                 lPatient(I)(7), 
-                lPatient(I)(8)
+                lPatient(I)(8),
+                lPatient(I)(9)
             );   
         COMMIT;
         EXCEPTION
