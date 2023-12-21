@@ -57,7 +57,7 @@ BEGIN
                 lPatient(I)(1),
                 lPatient(I)(2),
                 lPatient(I)(3), 
-                lPatient(I)(4),
+                to_date(lPatient(I)(4),'YYYY-MM-DD'),
                 lPatient(I)(5), 
                 lPatient(I)(6),
                 lPatient(I)(7), 
